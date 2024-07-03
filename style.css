@@ -1,0 +1,103 @@
+/* General body styling */
+body {    
+  background: url("images/background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar brand styling */
+.navbar-brand {
+  font-size: 35px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Form container styling */
+#form {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 28%;
+  border-radius: 10px;
+  margin: 120px auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+#form:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading styling */
+h1 {
+  text-align: center;
+  color: #6C16BE;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input {
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #e0e0e0;
+  padding: 10px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus {
+  border-color: #6C16BE;
+  outline: none;
+}
+
+/* Button styling */
+#btn {
+  width: 100%;
+  color: #fff;
+  background-color: #6C16BE;
+  padding: 10px;
+  font-weight: 700;
+  font-size: larger;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#btn:hover {
+  background-color: #581a9e;
+}
+
+/* Form label styling */
+form label {
+  color: #646464;
+  font-size: 18px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 1350px) {
+  #form {
+    width: 40%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #form {
+    width: 50%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #form {
+    width: 80%;
+    padding: 20px;
+  }
+}
