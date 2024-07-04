@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     if ($result->num_rows > 0) {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row["password"])) {
-            header("Location: welcome.php");
+            header("Location: dashboard.php");
             exit();
         } else {
             echo '<script>
@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
     ?>
     <div id="form">
     <h1>Login Form</h1>
-    <form name="form" action="signup.php" method="POST">
+    <form name="form" action="login.php" method="POST">
        <lebel> Enter Username/Email</label>
        <input type="text" id="user" name="user" required><br><br>
        <lebel> Enter Password</label>
